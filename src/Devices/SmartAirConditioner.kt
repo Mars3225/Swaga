@@ -3,7 +3,7 @@ package Devices
 class SmartAirConditioner(
     name: String,
     isOn: Boolean = false,
-    val temperature : Int
+    var temperature : Int
 ) : SmartDevice (name, isOn) {
     override fun turnOn() {
         when {
