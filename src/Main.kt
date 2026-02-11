@@ -24,8 +24,8 @@ fun controlDevice(device: SmartDevice) {
 
 fun changeTemperature(device: SmartAirConditioner): SmartAirConditioner {
     print("Введите новое значение температуры: ")
-    val input = readLine()
-    val inputToInt = input?.toIntOrNull() ?: 22
+    val input = readln()
+    val inputToInt = input.toIntOrNull() ?: 22
     device.temperature = inputToInt
     println("Установлена температура: ${device.temperature}")
     return device
