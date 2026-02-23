@@ -1,6 +1,6 @@
-package Devices
+package smartDevices.Devices
 
-class SmartLamp(
+class SmartTV(
     name: String,
     isOn: Boolean = false
 ) : SmartDevice (name, isOn) {
@@ -12,7 +12,7 @@ class SmartLamp(
             }
         }
         isOn = true
-        println("Флешка!")
+        println("Новогоднее поздравление президента?")
     }
     override fun turnOff() {
         when {
@@ -22,6 +22,6 @@ class SmartLamp(
             }
         }
         isOn = false
-        println("Ну и сиди в темноте...")
+        println("Увидимся через год...")
     }
 }
