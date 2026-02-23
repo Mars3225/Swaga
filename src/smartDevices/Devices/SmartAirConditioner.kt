@@ -25,9 +25,4 @@ class SmartAirConditioner(
         isOn = false
         println("Кажись лето закончилось")
     }
-}public class RgbLamp(
-        name: java.lang.String,
-        isOn: Boolean = false,
-        brightness: Int = 50,
-        var color: String = "White"
-)
+}
