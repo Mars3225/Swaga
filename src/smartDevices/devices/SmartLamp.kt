@@ -1,4 +1,4 @@
-package smartDevices.Devices
+package smartDevices.devices
 
 open class SmartLamp(
     name: String,
@@ -22,9 +22,9 @@ open class SmartLamp(
 
     fun turnOn(brightness: Int) {
         if (!isOn) {
-            turnOn() // включаем лампу
+            turnOn()
         }
-        setBrightness(brightness)
+        setBrightness1(brightness)
     }
 
     override fun turnOff() {
@@ -36,9 +36,9 @@ open class SmartLamp(
         println("Ну и сиди в темноте...")
     }
 
-    open fun setBrightness(value: Int) {
+    open fun setBrightness1(value: Int) {
         if (!isOn) {
-            println("⚠️ Нельзя менять яркость — лампа выключена")
+            println("Нельзя менять яркость — лампа выключена")
             return
         }
 

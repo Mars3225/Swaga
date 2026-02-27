@@ -1,4 +1,4 @@
-package smartDevices.Devices
+package smartDevices.devices
 
 abstract class SmartDevice(
     val name : String,

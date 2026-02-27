@@ -1,9 +1,8 @@
-package smartDevices.Devices
+package smartDevices.devices
 
-class SmartAirConditioner(
+class SmartTV(
     name: String,
-    isOn: Boolean = false,
-    var temperature : Int
+    isOn: Boolean = false
 ) : SmartDevice (name, isOn) {
     override fun turnOn() {
         when {
@@ -13,7 +12,7 @@ class SmartAirConditioner(
             }
         }
         isOn = true
-        println("Ща устроим тут новый ледниковый период. Шучу - температура $temperature")
+        println("Новогоднее поздравление президента?")
     }
     override fun turnOff() {
         when {
@@ -23,6 +22,6 @@ class SmartAirConditioner(
             }
         }
         isOn = false
-        println("Кажись лето закончилось")
+        println("Увидимся через год...")
     }
 }

@@ -1,10 +1,10 @@
 package smartDevices
 
-import smartDevices.Devices.SmartDevice
-import smartDevices.Devices.SmartLamp
-import smartDevices.Devices.SmartTV
-import smartDevices.Devices.SmartAirConditioner
-import smartDevices.Devices.RgbLamp
+import smartDevices.devices.SmartDevice
+import smartDevices.devices.SmartLamp
+import smartDevices.devices.SmartTV
+import smartDevices.devices.SmartAirConditioner
+import smartDevices.devices.RgbLamp
 
 fun main() {
 
@@ -18,21 +18,21 @@ fun main() {
     )
     devices.forEach { controlDevice(it) }
 
-    lamp.setBrightness(80)
+    lamp.setBrightness1(80)
     lamp.turnOn(70)
-    lamp.setBrightness(40)
+    lamp.setBrightness1(40)
     lamp.turnOff()
-    lamp.setBrightness(20)
+    lamp.setBrightness1(20)
 
-    rgbLamp.setColor("Red")
-    rgbLamp.setBrightness(60)
+    rgbLamp.setColor1("Red")
+    rgbLamp.setBrightness1(60)
 
     rgbLamp.turnOn(50)
 
-    rgbLamp.setColor("Blue")
-    rgbLamp.setBrightness(80)
+    rgbLamp.setColor1("Blue")
+    rgbLamp.setBrightness1(80)
 
-    rgbLamp.setColor("Green", 30)
+    rgbLamp.setColor1("Green", 30)
 
     rgbLamp.turnOff()
 }
